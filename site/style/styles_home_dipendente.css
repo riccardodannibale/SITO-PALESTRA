@@ -1,0 +1,432 @@
+/* Corpo della pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: yellow;
+  text-align: center;
+  background-image: url('img/background.png'); /* Sostituisci con il percorso corretto */
+  background-size: cover;
+  background-position: center 70px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 70px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.title-underline {
+  border: none;
+  border-top: 0.1px solid rgba(255,255,255,0.3);
+  margin: 2px 0;
+  width: 100vw;
+  position: relative;
+  left: 0;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav .logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav .logo .logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  background: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Box messaggi in basso a destra */
+.message-box {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 250px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.message-box h3 {
+  font-size: 16px;
+  color: yellow;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message-box p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Menu a scomparsa */
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -350px; /* Menu nascosto inizialmente */
+  width: 350px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 10;
+  padding-top: 50px;
+}
+
+#side-menu.show {
+  left: 0; /* Menu visibile quando ha la classe 'show' */
+}
+
+/* Stili per il contenuto del menu a scomparsa */
+.menu-content {
+  padding: 20px;
+  color: white;
+}
+
+.menu-content h3 {
+  margin-top: 20px;
+  color: yellow;
+}
+
+/* Contenitore per il bottone hamburger e la scritta */
+.menu-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Bottone hamburger */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+/* Scritta accanto al bottone hamburger */
+.menu-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffff00;
+  margin-left: 40px;
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+/* Icona del bottone hamburger */
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animazione quando il menu è aperto (X) */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Stile per il popup di conferma logout e popup nuovo iscritto */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: rgba(20, 20, 20, 0.95);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: yellow;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn.confirm {
+  background: yellow;
+  color: black;
+}
+
+.btn.confirm:hover {
+  background: #d4af37;
+}
+
+.btn.cancel {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn.cancel:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Effetto fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer strong {
+  color: yellow;
+}
+
+/* Form Invio Messaggi */
+.message-form {
+  position: fixed;
+  bottom: 50px;
+  right: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  width: 250px;
+  max-height: 200px;
+}
+
+.message-form h3 {
+  font-size: 16px;
+  color: yellow;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  background: #333;
+  color: white;
+}
+
+.message-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.message-form button:hover {
+  background-color: #d4af37;
+}
+
+/* Personalizzazione dei messaggi di alert */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Verde brillante */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.custom-alert.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Stile per la lista degli iscritti */
+#lista-iscritti {
+  max-height: calc(100vh - 150px); /* Utilizza lo spazio disponibile nel viewport */
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Personalizzazione dello scrolling per Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #ffcc00 #222;
+}
+
+/* Personalizzazione della scrollbar per browser WebKit (Chrome, Safari, Edge) */
+#lista-iscritti::-webkit-scrollbar {
+  width: 10px;
+}
+
+#lista-iscritti::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 5px;
+}
+
+#lista-iscritti::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 10px;
+  border: 2px solid #222;
+}
+
+/* Stile per ogni elemento della lista (iscritti) */
+#lista-iscritti li {
+  background-color: #333;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Personalizzazione del bottone "Aggiungi iscritto" */
+#newIscrittoButton {
+  background-color: #28a745;  /* Verde brillante */
+  color: white;               /* Testo bianco */
+  padding: 12px 20px;         /* Spaziatura interna */
+  border: none;               /* Nessun bordo */
+  border-radius: 5px;         /* Angoli arrotondati */
+  font-size: 16px;            /* Dimensione del testo */
+  cursor: pointer;            /* Puntatore a mano al passaggio del mouse */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#newIscrittoButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+#newIscrittoButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.65;
+}

@@ -1,0 +1,316 @@
+/* Corpo della pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: yellow;
+    text-align: center;
+    background-color: #444; /* Colore di sfondo grigio scuro */
+    background-image: none !important; /* Rimuove l'immagine di background */
+    padding-top: 150px; /* Maggiore spazio per evitare che i contenuti si sovrappongano ai bottoni */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.title-underline {
+    border: none;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.3);
+    margin: 3px 0;
+    width: 100vw;
+    position: relative;
+    left: 0;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav .logo .logo-image {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 0;
+    background: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Box per la location e la mappa */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Box di contatto */
+.contact-info {
+    display: flex;
+    justify-content: space-around; /* Distanza tra i blocchi */
+    gap: 10px; /* Distanza tra i blocchi */
+    flex-wrap: wrap; /* Permette la visualizzazione in più righe sui dispositivi più piccoli */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ogni blocco di informazioni */
+.info-block {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo scuro per il box */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%; /* Adattabilità */
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+.info-block h2 {
+    font-size: 18px;
+    color: yellow; /* Colore per i titoli */
+    margin-bottom: 5px;
+}
+
+.info-block p {
+    margin-bottom: 5px;
+}
+
+.info-block strong {
+    color: yellow;
+}
+
+/* Mappa */
+#map {
+    width: 400px;   /* Larghezza fissata per il quadrato */
+    height: 300px;  /* Altezza fissata per il quadrato */
+    margin-top: 30px;
+    border-radius: 10px; /* Rende gli angoli più morbidi */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Ombra leggera */
+}
+
+/* Stile per il popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background: rgba(20, 20, 20, 0.95);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: yellow;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.confirm {
+    background: yellow;
+    color: black;
+}
+
+.btn.confirm:hover {
+    background: #d4af37;
+}
+
+.btn.cancel {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn.cancel:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer strong {
+    color: yellow;
+}
+
+/* MEDIA QUERY PER TELEFONI (max-width: 480px) */
+/* Le modifiche riguardano le dimensioni e gli spazi, mantenendo invariato il layout per i PC */
+@media (max-width: 480px) {
+   /* Riduzione delle dimensioni generali della pagina */
+   body {
+    padding-top: 80px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.title-underline {
+    border: none;
+    border-top: 0.1px solid rgba(255,255,255,0.3);
+    margin: 3px 0;
+    width: 100vw;
+    position: relative;
+    left: -30px;
+}
+
+/* Mantenimento del layout del menu come in desktop */
+nav {
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+nav .logo {
+    font-size: 30px;
+    gap: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    margin: 0;
+    flex-direction: row; /* Layout orizzontale come per desktop */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0;
+    background: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+    
+    .location-info {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;  /* Impila verticalmente i blocchi per adattarsi a schermi piccoli */
+        gap: 10px;
+    }
+    
+    .info-block {
+        max-width: 100%;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+    
+    #map {
+        width: 100%;
+        height: 200px;  /* Altezza fissa per garantire la visualizzazione della mappa */
+        max-width: 300px;
+    }
+    
+    .popup-box {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

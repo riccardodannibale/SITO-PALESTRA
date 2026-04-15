@@ -1,0 +1,355 @@
+/* Corpo della pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: yellow;
+    text-align: center;
+    background-color: #444;
+    padding-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.title-underline {
+    border: none;
+    border-top: 0.1px solid rgba(255,255,255,0.3);
+    margin: 3px 0;
+    width: 100vw;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Logo e menu statico */
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav .logo .logo-image {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 0;
+    background: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Calendario */
+.calendar {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.calendar h2 {
+    color: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.lesson-cell {
+    background-color: #444;
+    cursor: pointer;
+}
+
+.lesson-cell:hover {
+    background-color: #f9f9f9;
+}
+
+/* Navigazione del calendario */
+.calendar-navigation {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.calendar-navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar-navigation a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-overlay.show {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Popup Box */
+.popup-box {
+    background: rgba(20, 20, 20, 0.95);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: yellow;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.confirm {
+    background: yellow;
+    color: black;
+}
+
+.btn.confirm:hover {
+    background: #d4af37;
+}
+
+.btn.cancel {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn.cancel:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Effetto fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer strong {
+    color: yellow;
+}
+
+.highlight-column {
+    border: 3px solid yellow;
+}
+
+/* Box di errore e messaggi di conferma */
+.alert-box, .success-box {
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+.alert-box.show, .success-box.show {
+    display: block;
+}
+
+.alert-box button, .success-box button {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.alert-box button:hover, .success-box button:hover {
+    background-color: #fff;
+}
+
+/* Bottone per prenotare */
+.book-button {
+    background-color: green;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #d4af37;
+}
+
+.book-button.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+    .booking-info {
+      /* Esempio: posizionamento in alto a destra all'interno della cella */
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.9em;
+      background: rgba(255,255,255,0.8);
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    /* Assicurati che le celle contenenti lezioni abbiano position: relative */
+    .lesson-cell {
+      position: relative;
+      padding: 10px;
+    }
+/* Stile per il tasto "Elimina Lezione" */
+.delete-lesson-button {
+    background-color: #ff4d4d !important; /* Rosso */
+    color: #fff !important;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.delete-lesson-button:hover {
+    background-color: #ff1a1a !important;
+}
+/* Tooltip CSS per la lista dei prenotati */
+.booking-info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.booking-info .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 120%; /* Posiziona il tooltip sopra il box; regola questo valore se necessario */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+/* Visualizza il tooltip al passaggio del mouse */
+.booking-info:hover .tooltip {
+    display: block;
+}
+

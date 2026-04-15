@@ -1,0 +1,326 @@
+/* Impostazioni di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: yellow;
+  text-align: center;
+  background-color: #444; /* Sostituisci con il percorso corretto */
+  background-size: cover;
+  background-position: center 70px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 140px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header e navigazione */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.title-underline {
+  border: none;
+  border-top: 0.1px solid rgba(255,255,255,0.3);
+  margin: 2px 0;
+  width: 100vw;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav .logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav .logo .logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Menu a scomparsa */
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -350px; /* Nascosto inizialmente */
+  width: 350px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 10;
+  padding-top: 50px;
+}
+
+#side-menu.show {
+  left: 0;
+}
+
+.menu-content {
+  padding: 20px;
+  color: white;
+}
+
+.menu-content h3 {
+  margin-top: 20px;
+  color: yellow;
+}
+
+/* Bottone hamburger */
+.menu-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 85px;
+  left: 25px;
+  z-index: 9999;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffff00;
+  margin-left: 40px;
+  position: center;
+  top: -10px;
+  left: 70px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animazione per il bottone aperto (trasformazione in "X") */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Stile per il popup di logout */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background: rgba(20, 20, 20, 0.95);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: yellow;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.confirm {
+    background: yellow;
+    color: black;
+}
+
+.btn.confirm:hover {
+    background: #d4af37;
+}
+
+.btn.cancel {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn.cancel:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Effetto fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+/* Sezione "Contatti" e mappa */
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-block {
+  background-color: rgba(0,0,0,0.8);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(255,255,255,0.2);
+  max-width: 400px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+}
+
+.info-block h2 {
+  font-size: 18px;
+  color: yellow;
+  margin-bottom: 5px;
+}
+
+.info-block p {
+  margin-bottom: 5px;
+}
+
+.info-block strong {
+  color: yellow;
+}
+
+#map {
+  width: 400px;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+}
+
+/* Lista degli ingressi */
+#lista-ingressi {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#lista-ingressi li {
+  background-color: #333;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#lista-ingressi li strong {
+  color: #ffff00;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer strong {
+  color: yellow;
+}
