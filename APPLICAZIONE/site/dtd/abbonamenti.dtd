@@ -1,0 +1,6 @@
+<!ELEMENT abbonamenti (abbonamento+)>
+<!ELEMENT abbonamento (tipo, durata_mesi, prezzo)>
+<!ATTLIST abbonamento id ID #REQUIRED>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT durata_mesi (#PCDATA)>
+<!ELEMENT prezzo (#PCDATA)>

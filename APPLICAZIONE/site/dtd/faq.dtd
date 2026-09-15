@@ -1,0 +1,5 @@
+<!ELEMENT faqs (faq+)> 
+<!ELEMENT faq (id, question, answer)> 
+<!ELEMENT id (#PCDATA)> 
+<!ELEMENT question (#PCDATA)> 
+<!ELEMENT answer (#PCDATA)>

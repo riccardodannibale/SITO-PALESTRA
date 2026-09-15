@@ -1,0 +1,9 @@
+<!ELEMENT corsi (corso+)>
+<!ELEMENT corso (nome, descrizione, durata_lezione, posti_totali, immagine, datetime_lezione?)>
+<!ATTLIST corso id ID #REQUIRED>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT descrizione (#PCDATA)>
+<!ELEMENT durata_lezione (#PCDATA)>
+<!ELEMENT posti_totali (#PCDATA)>
+<!ELEMENT immagine (#PCDATA)>
+<!ELEMENT datetime_lezione (#PCDATA)>

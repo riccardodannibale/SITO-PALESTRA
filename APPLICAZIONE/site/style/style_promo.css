@@ -1,0 +1,234 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+  padding-bottom: 90px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: yellow;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.main-menu a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.titolo {
+  color: yellow;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container::-webkit-scrollbar {
+  height: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.promo-item {
+  background: #222;
+  border: 2px solid #444;
+  border-radius: 10px;
+  flex: 0 0 300px; 
+  min-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  padding: 12px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.promo-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.promo-content h2 {
+  color: yellow;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.promo-content p {
+  margin: 0;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.promo-add-tile {
+  flex: 0 0 300px;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #888; 
+  border-radius: 10px;
+  background: rgba(255,255,255,0.02);
+  color: #ccc;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: background .15s ease, transform .15s ease;
+}
+.promo-add-tile:hover {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-4px);
+}
+
+.delete-btn {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+.add-promo-form {
+  max-width: 900px;
+  margin: 24px auto 40px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.add-promo-form h2 {
+  color: yellow;
+  margin-top: 0;
+}
+
+.add-promo-form label {
+  display: block;
+  margin: 8px 0;
+  color: #ddd;
+}
+.add-promo-form input[type="text"],
+.add-promo-form input[type="date"],
+.add-promo-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.add-promo-form fieldset {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  color: #ddd;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #555;
+  color: #ddd;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-save {
+  background: yellow;
+  border: none;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #222;
+  border-top: 1px solid #333;
+  z-index: 2000;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 8px;
+  filter: invert(100%) brightness(200%);
+}
+
+@media (max-width: 720px) {
+  .promo-item, .promo-add-tile {
+    flex: 0 0 260px;
+    min-width: 260px;
+  }
+  .container {
+    padding: 12px;
+    gap: 12px;
+  }
+  .titolo { font-size: 2rem; margin: 24px 0; }
+}

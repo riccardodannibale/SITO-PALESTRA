@@ -1,0 +1,142 @@
+/* Reset e base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  color: yellow;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu come lista unificata */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  display: inline;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-menu a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Titolo pagina */
+.titolo {
+  color: yellow;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px 0;
+}
+
+/* Alert */
+.alert {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid red;
+  max-width: 800px;
+  background-color: #111;
+  border-radius: 10px;
+}
+
+.attenzione {
+  color: red;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.alert-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.alert-img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Tabella */
+.tabella {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.corso {
+  color: yellow;
+  font-size: 2rem;
+}
+
+.prezzi {
+  font-size: 2rem;
+  color: yellow;
+}
+
+/* Immagini promo */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.container img {
+  width: 600px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  margin-top: 40px;
+}

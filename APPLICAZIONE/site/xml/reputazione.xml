@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reputazioni PUBLIC "SYSTEM" "../dtd/reputazione.dtd">
+<reputazioni>
+  <utente id="9">
+    <username>admin</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="0.00">0.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="5">
+    <username>alice</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="2.50">2.50</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="6">
+    <username>bob</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="1.50">1.50</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="7">
+    <username>carla</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="0.00">0.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="8">
+    <username>dario</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="0.00">0.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="3">
+    <username>gianni</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="1.00">1.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="2">
+    <username>luisa</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="2.00">2.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="1">
+    <username>mario</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="2.00">2.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="10">
+    <username>root</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="0.00">0.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+  <utente id="4">
+    <username>sara</username>
+    <punteggio base="0.00" last_calc="2026-09-14T17:56:09+02:00" last_value="1.00">1.00</punteggio>
+    <ultima_attivita>2026-09-14</ultima_attivita>
+  </utente>
+</reputazioni>

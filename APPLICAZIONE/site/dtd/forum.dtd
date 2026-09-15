@@ -1,0 +1,26 @@
+<!ELEMENT forum (thread+)>
+<!ELEMENT thread (titolo, autore, data_creazione, contenuto, commenti)>
+<!ATTLIST thread
+  id CDATA #REQUIRED
+  pinned (true|false) #IMPLIED
+  locked (true|false) #IMPLIED
+  last_edit_by CDATA #IMPLIED
+  last_edit_date CDATA #IMPLIED>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT autore (#PCDATA)>
+<!ELEMENT data_creazione (#PCDATA)>
+<!ELEMENT contenuto (#PCDATA)> 
+<!ELEMENT commenti (commento*)>
+<!ELEMENT commento (autore, contenuto, data, consensi, valutazioni_commento?, valutazione_corso?)>
+<!ATTLIST commento
+  id CDATA #IMPLIED>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT consensi (#PCDATA | consenso)*> 
+<!ELEMENT consenso (#PCDATA)>
+<!ELEMENT valutazioni_commento (valutazione*)>
+<!ELEMENT valutazione (utilita, accordo)>
+<!ATTLIST valutazione
+  valutatore CDATA #REQUIRED>
+<!ELEMENT utilita (#PCDATA)>
+<!ELEMENT accordo (#PCDATA)>
+<!ELEMENT valutazione_corso (#PCDATA)>

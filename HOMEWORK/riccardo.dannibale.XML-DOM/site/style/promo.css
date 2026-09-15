@@ -1,0 +1,181 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: yellow;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  display: inline;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-menu a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Titolo pagina */
+.titolo {
+  color: yellow;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px;
+}
+
+/* Alert */
+.alert {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid red;
+  max-width: 800px;
+  background-color: #111;
+  border-radius: 10px;
+}
+
+.attenzione {
+  color: red;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.alert-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.alert-img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Scorrimento promozioni */
+.container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.promo-item {
+  background: #222;
+  border: 2px solid #444;
+  border-radius: 10px;
+  flex: 0 0 300px;
+}
+
+.promo-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #444;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.promo-content {
+  padding: 15px;
+}
+
+.promo-content h2 {
+  color: yellow;
+  margin: 0 0 10px;
+}
+
+.promo-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+/* Form di aggiunta promo */
+.add-promo-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.add-promo-form h2 {
+  color: yellow;
+}
+
+.add-promo-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.add-promo-form input[type="text"],
+.add-promo-form input[type="date"],
+.add-promo-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-promo-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  margin-top: 40px;
+}

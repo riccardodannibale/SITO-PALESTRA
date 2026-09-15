@@ -1,0 +1,12 @@
+<!ELEMENT user_abbonamenti (abbonamento_utente*)>
+<!ELEMENT abbonamento_utente (id_user, id_abbonamento, data_inizio, data_scadenza, stato, prezzo, valuta?, prezzo_base?, id_promo?)>
+<!ATTLIST abbonamento_utente id ID #REQUIRED>
+<!ELEMENT id_user (#PCDATA)>
+<!ELEMENT id_abbonamento (#PCDATA)>
+<!ELEMENT data_inizio (#PCDATA)>     
+<!ELEMENT data_scadenza (#PCDATA)>  
+<!ELEMENT stato (#PCDATA)>           
+<!ELEMENT prezzo (#PCDATA)>
+<!ELEMENT valuta (#PCDATA)>
+<!ELEMENT prezzo_base (#PCDATA)>
+<!ELEMENT id_promo (#PCDATA)>

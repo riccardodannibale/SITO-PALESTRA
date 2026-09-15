@@ -1,0 +1,5 @@
+<!ELEMENT feedback (valutazione_corso+)>
+<!ELEMENT valutazione_corso (id_lezione, voto, id_user_abbonamento)>
+<!ELEMENT id_lezione (#PCDATA)>
+<!ELEMENT voto (#PCDATA)>
+<!ELEMENT id_user_abbonamento (#PCDATA)>

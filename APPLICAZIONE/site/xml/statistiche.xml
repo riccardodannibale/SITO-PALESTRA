@@ -1,0 +1,43 @@
+<!DOCTYPE statistiche SYSTEM "./dtd/statistiche.dtd">
+<statistiche>
+  <corso id="1">
+    <valutazione_media>4.2</valutazione_media>
+    <partecipazioni>150</partecipazioni>
+  </corso>
+  <corso id="2">
+    <valutazione_media>4.5</valutazione_media>
+    <partecipazioni>120</partecipazioni>
+  </corso>
+  <corso id="3">
+    <valutazione_media>4.0</valutazione_media>
+    <partecipazioni>180</partecipazioni>
+  </corso>
+  <corso id="4">
+    <valutazione_media>4.3</valutazione_media>
+    <partecipazioni>95</partecipazioni>
+  </corso>
+  <corso id="5">
+    <valutazione_media>3.8</valutazione_media>
+    <partecipazioni>80</partecipazioni>
+  </corso>
+  <corso id="6">
+    <valutazione_media>4.7</valutazione_media>
+    <partecipazioni>110</partecipazioni>
+  </corso>
+  <corso id="7">
+    <valutazione_media>4.1</valutazione_media>
+    <partecipazioni>130</partecipazioni>
+  </corso>
+  <corso id="8">
+    <valutazione_media>4.6</valutazione_media>
+    <partecipazioni>140</partecipazioni>
+  </corso>
+  <corso id="9">
+    <valutazione_media>4.4</valutazione_media>
+    <partecipazioni>75</partecipazioni>
+  </corso>
+  <corso id="10">
+    <valutazione_media>4.0</valutazione_media>
+    <partecipazioni>90</partecipazioni>
+  </corso>
+</statistiche>

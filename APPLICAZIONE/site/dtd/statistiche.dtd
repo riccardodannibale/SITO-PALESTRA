@@ -1,0 +1,9 @@
+<!ELEMENT statistiche (corso+, forum, soddisfazione_generale)> 
+<!ELEMENT corso (valutazione_media, partecipazioni)> 
+<!ATTLIST corso id CDATA #REQUIRED> 
+<!ELEMENT valutazione_media (#PCDATA)> 
+<!ELEMENT partecipazioni (#PCDATA)> 
+<!ELEMENT forum (attivita_media_giornaliera, thread_attivi)> 
+<!ELEMENT attivita_media_giornaliera (#PCDATA)> 
+<!ELEMENT thread_attivi (#PCDATA)> 
+<!ELEMENT soddisfazione_generale (#PCDATA)> 

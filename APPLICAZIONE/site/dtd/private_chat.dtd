@@ -1,0 +1,11 @@
+<!ELEMENT chat (messaggio*)> 
+<!ELEMENT messaggio (testo)> 
+<!ATTLIST messaggio 
+    id CDATA #REQUIRED 
+    mittente CDATA #REQUIRED     
+    destinatario CDATA #REQUIRED     
+    data CDATA #REQUIRED     
+    risposta CDATA #IMPLIED 
+    sollecito_inviato CDATA #REQUIRED
+    admin_id CDATA #IMPLIED> 
+<!ELEMENT testo (#PCDATA)>

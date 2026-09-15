@@ -1,0 +1,9 @@
+<!ELEMENT promo (promozione*)>
+<!ELEMENT promozione (id_promo, titolo, descrizione, data_inizio, data_fine, codice_sconto, attiva)>
+<!ELEMENT id_promo (#PCDATA)>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT descrizione (#PCDATA)>
+<!ELEMENT data_inizio (#PCDATA)>
+<!ELEMENT data_fine (#PCDATA)>
+<!ELEMENT codice_sconto (#PCDATA)>
+<!ELEMENT attiva (#PCDATA)>

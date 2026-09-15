@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE promo SYSTEM "../dtd/promo.dtd">
+<promo>
+  <promozione>
+    <id_promo>1</id_promo>
+    <titolo>Promo Asciugamano Gratis</titolo>
+    <descrizione>Se ti abboni entro il 01/05/2025, per te un asciugamano in omaggio.</descrizione>
+    <data_inizio>2025-04-01</data_inizio>
+    <data_fine>2025-05-01</data_fine>
+    <codice_sconto>ASCIUG2025</codice_sconto>
+    <attiva>1</attiva>
+  </promozione>
+  <promozione>
+    <id_promo>2</id_promo>
+    <titolo>Promo Estate 2025</titolo>
+    <descrizione>Abbonati con un amico e paga 260€ a testa.</descrizione>
+    <data_inizio>2025-06-01</data_inizio>
+    <data_fine>2025-08-31</data_fine>
+    <codice_sconto>ESTATE25</codice_sconto>
+    <attiva>1</attiva>
+  </promozione>
+  
+</promo>

@@ -1,0 +1,135 @@
+/* Reset e base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    color: yellow;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-menu li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Contenuto principale */
+.main-content {
+    flex: 1; /* Consente al contenuto di occupare lo spazio rimanente */
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Titolo sezione */
+.titolo {
+    text-align: center;
+    color: yellow;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Lista informazioni */
+.lista {
+    color: white;
+    list-style-position: inside;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+/* Contenitore immagine + testo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-left: -130px;
+}
+
+/* Immagine mappa */
+.container img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Click Here */
+.clickable-indicator {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background 0.3s, color 0.3s;
+}
+
+.clickable-indicator:hover {
+    color: #0056b3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.clickable-indicator::after {
+    content: ' ➡️';
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #222;
+    margin-top: 40px;
+    border-radius: 0;
+    position: relative;
+}

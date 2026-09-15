@@ -1,0 +1,6 @@
+<!ELEMENT reputazioni (utente*)>
+<!ELEMENT utente (username, punteggio, ultima_attivita)>
+<!ATTLIST utente id CDATA #REQUIRED>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT punteggio (#PCDATA)>
+<!ELEMENT ultima_attivita (#PCDATA)>

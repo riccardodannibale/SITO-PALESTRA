@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE promozioni SYSTEM "../dtd/promo.dtd">
+<promozioni>
+  <promo id="1">
+    <titolo>Benvenuto in Palestra!</titolo>
+    <descrizione>Primo mese a met&#xE0; prezzo per i nuovi iscritti.</descrizione>
+    <data_inizio>2025-06-01</data_inizio>
+    <data_fine>2025-12-31</data_fine>
+    <codice_sconto>WELCOME50</codice_sconto>
+    <attiva>1</attiva>
+    <percentuale>50.00</percentuale>
+    <applica>
+      <tipo>Mensile</tipo>
+      <tipo>Trimestrale</tipo>
+    </applica>
+  </promo>
+  <promo id="2">
+    <titolo>Sconto Famiglia</titolo>
+    <descrizione>20% di sconto sul secondo abbonamento per nuclei familiari.</descrizione>
+    <data_inizio>2025-07-01</data_inizio>
+    <data_fine>2025-09-30</data_fine>
+    <codice_sconto>FAMILY20</codice_sconto>
+    <attiva>0</attiva>
+    <percentuale>20.00</percentuale>
+    <applica>
+      <tipo>Trimestrale</tipo>
+    </applica>
+  </promo>
+  <promo id="4">
+    <titolo>Black Friday</titolo>
+    <descrizione>50% di sconto su tutti gli abbonamenti annuali.</descrizione>
+    <data_inizio>2025-11-25</data_inizio>
+    <data_fine>2025-11-30</data_fine>
+    <codice_sconto>BF2025</codice_sconto>
+    <attiva>1</attiva>
+    <percentuale>50.00</percentuale>
+    <applica>
+      <tipo>Annuale</tipo>
+    </applica>
+  </promo>
+  <promo id="5">
+    <titolo>Estate in Forma</titolo>
+    <descrizione>Abbonamento trimestrale con 30% di sconto.</descrizione>
+    <data_inizio>2025-07-21</data_inizio>
+    <data_fine>2025-11-21</data_fine>
+    <codice_sconto>ESTATE30</codice_sconto>
+    <attiva>0</attiva>
+    <percentuale>30.00</percentuale>
+    <applica>
+      <tipo>Trimestrale</tipo>
+      <tipo>Annuale</tipo>
+    </applica>
+  </promo>
+</promozioni>

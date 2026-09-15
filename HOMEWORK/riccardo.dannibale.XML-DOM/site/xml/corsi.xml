@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE corsi SYSTEM "../dtd/corsi.dtd">
+<corsi>
+  <corso id="c1">
+    <nome>Pilates</nome>
+    <descrizione>Corso di Pilates per tutti i livelli</descrizione>
+    <durata_lezione>60</durata_lezione>
+    <posti_totali>15</posti_totali>
+    <immagine>Pilates.png</immagine>
+    <datetime_lezione>2025-06-01 18:00:00</datetime_lezione>
+  </corso>
+  <corso id="c2">
+    <nome>Zumba</nome>
+    <descrizione>Corso di danza fitness divertente</descrizione>
+    <durata_lezione>45</durata_lezione>
+    <posti_totali>20</posti_totali>
+    <immagine>Zumba.png</immagine>
+    <datetime_lezione>2025-06-02 17:00:00</datetime_lezione>
+  </corso>
+  <corso id="c3">
+    <nome>Ginnastica Dolce</nome>
+    <descrizione>Esercizi dolci per la mobilità articolare</descrizione>
+    <durata_lezione>50</durata_lezione>
+    <posti_totali>10</posti_totali>
+    <immagine>GinnasticaDolce.png</immagine>
+    <datetime_lezione>2025-06-03 09:00:00</datetime_lezione>
+  </corso>
+</corsi>

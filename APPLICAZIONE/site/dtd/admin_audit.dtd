@@ -1,0 +1,10 @@
+<!ELEMENT admin_actions (action+)>
+<!ELEMENT action (detail+)>
+<!ATTLIST action
+    timestamp CDATA #REQUIRED
+    admin CDATA #REQUIRED
+    type (edit | delete | pin | unpin) #REQUIRED
+    target_type (comment | thread) #REQUIRED
+    target_id CDATA #REQUIRED>
+<!ELEMENT detail (#PCDATA)>
+<!ATTLIST detail name CDATA #REQUIRED>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE corsi_base SYSTEM "../dtd/corsi_base.dtd">
+<corsi_base>
+  <corso_base id="1">
+    <nome>Yoga Mattutino</nome>
+    <descrizione>Un corso rilassante per iniziare la giornata con energia positiva.</descrizione>
+    <difficolta>1</difficolta>
+  </corso_base>
+  <corso_base id="2">
+    <nome>Pilates Intermedio</nome>
+    <descrizione>Tonifica il tuo corpo con movimenti controllati e respirazione consapevole.</descrizione>
+    <difficolta>2</difficolta>
+  </corso_base>
+  <corso_base id="3">
+    <nome>HIIT Sera</nome>
+    <descrizione>Allenamento ad alta intensità per bruciare calorie e migliorare resistenza.</descrizione>
+    <difficolta>3</difficolta>
+  </corso_base>
+  <corso_base id="4">
+    <nome>Stretching &amp; Mobilità</nome>
+    <descrizione>Sessione per migliorare flessibilità e recupero muscolare.</descrizione>
+    <difficolta>1</difficolta>
+  </corso_base>
+  <corso_base id="5">
+    <nome>Cardio leggero</nome>
+    <descrizione>Attività aerobica a basso impatto, adatta a tutti i livelli.</descrizione>
+    <difficolta>1</difficolta>
+  </corso_base>
+  <corso_base id="6">
+    <nome>Zumba Fitness</nome>
+    <descrizione>Allenamento divertente con coreografie di danza a ritmo latino.</descrizione>
+    <difficolta>2</difficolta>
+  </corso_base>
+  <corso_base id="7">
+    <nome>Functional Training</nome>
+    <descrizione>Esercizi a corpo libero e con attrezzi per potenziare forza e coordinazione.</descrizione>
+    <difficolta>3</difficolta>
+  </corso_base>
+  <corso_base id="8">
+    <nome>Meditazione Guidata</nome>
+    <descrizione>Pratica di rilassamento mentale per ridurre lo stress e migliorare la concentrazione.</descrizione>
+    <difficolta>1</difficolta>
+  </corso_base>
+  <corso_base id="9">
+    <nome>Cross Training</nome>
+    <descrizione>Allenamento vario e intenso che combina cardio e potenziamento muscolare.</descrizione>
+    <difficolta>3</difficolta>
+  </corso_base>
+  <corso_base id="10">
+    <nome>Circuito Brucia Grassi</nome>
+    <descrizione>Sessione a stazioni con esercizi dinamici per favorire il dimagrimento.</descrizione>
+    <difficolta>2</difficolta>
+  </corso_base>
+</corsi_base>

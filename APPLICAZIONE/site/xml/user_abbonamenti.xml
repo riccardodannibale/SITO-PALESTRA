@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE user_abbonamenti SYSTEM "../dtd/user_abbonamenti.dtd">
+<user_abbonamenti>
+  <abbonamento_utente id="a1">
+    <id_user>2</id_user>
+    <id_abbonamento>1</id_abbonamento>
+    <data_inizio>2025-07-01</data_inizio>
+    <data_scadenza>2026-07-01</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>99.50</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>199.00</prezzo_base>
+    <id_promo>1</id_promo>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a2">
+    <id_user>3</id_user>
+    <id_abbonamento>2</id_abbonamento>
+    <data_inizio>2025-04-01</data_inizio>
+    <data_scadenza>2026-04-01</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>249.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>249.00</prezzo_base>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a3">
+    <id_user>4</id_user>
+    <id_abbonamento>1</id_abbonamento>
+    <data_inizio>2025-07-15</data_inizio>
+    <data_scadenza>2025-08-15</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>50.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>50.00</prezzo_base>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a4">
+    <id_user>5</id_user>
+    <id_abbonamento>1</id_abbonamento>
+    <data_inizio>2025-07-01</data_inizio>
+    <data_scadenza>2025-08-01</data_scadenza>
+    <stato>scaduto</stato>
+    <prezzo>199.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>199.00</prezzo_base>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a5">
+    <id_user>6</id_user>
+    <id_abbonamento>1</id_abbonamento>
+    <data_inizio>2025-08-10</data_inizio>
+    <data_scadenza>2025-08-17</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>30.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>30.00</prezzo_base>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a6">
+    <id_user>7</id_user>
+    <id_abbonamento>2</id_abbonamento>
+    <data_inizio>2025-06-01</data_inizio>
+    <data_scadenza>2025-12-01</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>120.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>120.00</prezzo_base>
+  </abbonamento_utente>
+
+  <abbonamento_utente id="a7">
+    <id_user>8</id_user>
+    <id_abbonamento>1</id_abbonamento>
+    <data_inizio>2025-08-01</data_inizio>
+    <data_scadenza>2025-08-31</data_scadenza>
+    <stato>attivo</stato>
+    <prezzo>30.00</prezzo>
+    <valuta>EUR</valuta>
+    <prezzo_base>30.00</prezzo_base>
+  </abbonamento_utente>
+</user_abbonamenti>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE forum SYSTEM "../dtd/forum.dtd">
+<forum>
+  <thread id="1">
+    <titolo>Nuovi corsi richiesti</titolo>
+    <autore>mario</autore>
+    <data_creazione>2025-07-01 10:00:00</data_creazione>
+    <contenuto>Ciao a tutti — stiamo valutando l'introduzione di nuovi corsi per il prossimo trimestre. Quali attività vorreste vedere in palestra?</contenuto>
+    <commenti>
+      <commento id="comm_101">
+        <autore>luisa</autore>
+        <contenuto>Sarebbe fantastico avere un corso di Pilates avanzato serale (per chi vuole più sfida rispetto all'intermedio).</contenuto>
+        <data>2025-09-17 10:00:00</data>
+        <consensi>
+          <consenso>mario</consenso>
+          <consenso>alice</consenso>
+        </consensi>
+      </commento>
+      <commento id="comm_102">
+        <autore>alice</autore>
+        <contenuto>Io proporrei un corso HIIT serale e uno di Functional Training nel weekend: entrambi hanno molta richiesta.</contenuto>
+        <data>2025-09-17 11:00:00</data>
+        <consensi>
+          <consenso>luisa</consenso>
+          <consenso>mario</consenso>
+          <consenso>bob</consenso>
+        </consensi>
+      </commento>
+      <commento id="comm_103">
+        <autore>gianni</autore>
+        <contenuto>Potrebbe essere utile anche un corso di mobilità e prevenzione infortuni, magari tenuto da un fisioterapista.</contenuto>
+        <data>2025-09-17 12:00:00</data>
+        <consensi>
+          <consenso>mario</consenso>
+          <consenso>luisa</consenso>
+        </consensi>
+      </commento>
+      <commento id="comm_104">
+        <autore>sara</autore>
+        <contenuto>Io voterei per più lezioni di meditazione guidata al mattino — aiuterebbe chi lavora a concentrarsi prima del turno.</contenuto>
+        <data>2025-09-17 13:00:00</data>
+        <consensi>
+          <consenso>alice</consenso>
+          <consenso>gianni</consenso>
+        </consensi>
+      </commento>
+    </commenti>
+  </thread>
+
+  <thread id="2">
+    <titolo>Consigli alimentari pre-allenamento</titolo>
+    <autore>sara</autore>
+    <data_creazione>2025-07-02 09:30:00</data_creazione>
+    <contenuto>Avete ricette leggere e veloci da preparare 30–60 minuti prima dell'allenamento?</contenuto>
+    <commenti>
+      <commento id="comm_105">
+        <autore>bob</autore>
+        <contenuto>Frullato con banana, avena e un cucchiaino di burro di arachidi: digeribile e con buoni carboidrati per dare energia.</contenuto>
+        <data>2025-09-17 10:00:00</data>
+        <consensi>
+          <consenso>mario</consenso>
+          <consenso>luisa</consenso>
+          <consenso>alice</consenso>
+        </consensi>
+      </commento>
+      <commento id="comm_106">
+        <autore>mario</autore>
+        <contenuto>Yogurt greco con miele e una manciata di noci: proteine + grassi buoni — perfetto prima dell'allenamento.</contenuto>
+        <data>2025-09-17 10:45:00</data>
+        <consensi>
+          <consenso>bob</consenso>
+          <consenso>sara</consenso>
+        </consensi>
+      </commento>
+    </commenti>
+  </thread>
+
+  <thread id="3">
+    <titolo>Musica per allenamento</titolo>
+    <autore>alice</autore>
+    <data_creazione>2025-07-03 14:20:00</data_creazione>
+    <contenuto>Quali playlist vi danno più carica per l'allenamento? Condividete link o titoli!</contenuto>
+    <commenti>
+      <commento id="comm_107">
+        <autore>mario</autore>
+        <contenuto>Per cardio uso "Workout Hits 2025" su Spotify; per sollevamento peso preferisco roba rock/alternativa a 120-140 BPM.</contenuto>
+        <data>2025-09-17 14:45:00</data>
+        <consensi>
+          <consenso>alice</consenso>
+          <consenso>luisa</consenso>
+        </consensi>
+      </commento>
+      <commento id="comm_108">
+        <autore>luisa</autore>
+        <contenuto>Io creo playlist a tema (EDM, Hip-Hop) a seconda del tipo di allenamento — se volete ne condivido alcune.</contenuto>
+        <data>2025-09-17 15:00:00</data>
+        <consensi>
+          <consenso>bob</consenso>
+          <consenso>mario</consenso>
+        </consensi>
+      </commento>
+    </commenti>
+  </thread>
+
+  <thread id="4">
+    <titolo>Ask Trainer: postura corretta nello squat</titolo>
+    <autore>bob</autore>
+    <data_creazione>2025-07-04 08:50:00</data_creazione>
+    <contenuto>Ho dolore al ginocchio quando faccio squat — cosa posso correggere nella postura?</contenuto>
+    <commenti>
+      <commento id="comm_109">
+        <autore>alice</autore>
+        <contenuto>Controlla che le ginocchia non vadano oltre le punte dei piedi, mantieni la schiena neutra e attiva i glutei. Se il dolore persiste, consulta il fisioterapista.</contenuto>
+        <data>2025-09-17 09:10:00</data>
+        <consensi>
+          <consenso>luisa</consenso>
+          <consenso>mario</consenso>
+        </consensi>
+      </commento>
+    </commenti>
+  </thread>
+</forum>

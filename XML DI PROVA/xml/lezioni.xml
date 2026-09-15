@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lezioni SYSTEM "../dtd/lezioni.dtd">
+<lezioni>
+  <lezione id="1">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-08-05 09:00:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+    <prenotanti>
+      <prenotante id="1" id_abb="a1" user="mario" stato="confermato" data_prenotazione="2025-07-30 10:00:00"/>
+      <prenotante id="2" id_abb="a2" user="anna" stato="confermato" data_prenotazione="2025-07-31 14:30:00"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="2">
+    <id_corso_base>2</id_corso_base>
+    <datetime_lezione>2025-08-16 18:30:00</datetime_lezione>
+    <posti_totali>17</posti_totali>
+    <prenotanti>
+      <prenotante id="102" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-11 12:00:00" data_cancellazione="2025-08-11 15:39:42"/>
+      <prenotante id="103" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-12 13:20:58" data_cancellazione="2025-08-12 13:21:01"/>
+      <prenotante id="104" id_abb="a2" user="luisa" stato="confermato" data_prenotazione="2025-08-12 18:37:18"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="3">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-08-11 10:00:00</datetime_lezione>
+    <posti_totali>12</posti_totali>
+    <prenotanti>
+      <prenotante id="201" id_abb="a1" user="giulia" stato="confermato" data_prenotazione="2025-08-01 09:10:00"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="4">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-10-21 05:11:00</datetime_lezione>
+    <posti_totali>21</posti_totali>
+    <prenotanti>
+      <prenotante id="401" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-11 15:39:39" data_cancellazione="2025-08-12 18:37:22"/>
+      <prenotante id="402" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-16 14:03:38" data_cancellazione="2025-08-16 14:03:41"/>
+      <prenotante id="403" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-17 14:47:22" data_cancellazione="2025-08-17 14:47:24"/>
+      <prenotante id="404" id_abb="a10" user="bob" stato="cancellato" data_prenotazione="2025-09-13 10:28:23" data_cancellazione="2025-09-13 10:28:26"/>
+      <prenotante id="405" id_abb="a2" user="luisa" stato="confermato" data_prenotazione="2025-09-13 16:37:16"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="5">
+    <id_corso_base>3</id_corso_base>
+    <datetime_lezione>2025-08-20 19:30:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+    <prenotanti>
+      <prenotante id="301" id_abb="a2" user="alessio" stato="confermato" data_prenotazione="2025-08-05 16:20:00"/>
+      <prenotante id="302" id_abb="a4" user="beatrice" stato="cancellato" data_prenotazione="2025-08-06 11:00:00"/>
+      <prenotante id="303" id_abb="a3" user="cesare" stato="confermato" data_prenotazione="2025-08-07 18:40:00"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="6">
+    <id_corso_base>4</id_corso_base>
+    <datetime_lezione>2024-12-01 08:00:00</datetime_lezione>
+    <posti_totali>25</posti_totali>
+    <prenotanti/>
+  </lezione>
+  <lezione id="8">
+    <id_corso_base>2</id_corso_base>
+    <datetime_lezione>2025-09-01 18:00:00</datetime_lezione>
+    <posti_totali>30</posti_totali>
+    <prenotanti>
+      <prenotante id="1" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-12 18:43:55" data_cancellazione="2025-08-12 18:43:58"/>
+      <prenotante id="2" id_abb="a2" user="luisa" stato="cancellato" data_prenotazione="2025-08-12 19:49:51" data_cancellazione="2025-08-12 19:49:54"/>
+    </prenotanti>
+  </lezione>
+  <lezione id="9">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-02-12 21:12:00</datetime_lezione>
+    <posti_totali>45</posti_totali>
+    <prenotanti/>
+  </lezione>
+  <lezione id="10">
+    <id_corso_base>3</id_corso_base>
+    <datetime_lezione>2025-09-18 21:21:00</datetime_lezione>
+    <posti_totali>23</posti_totali>
+    <prenotanti/>
+  </lezione>
+  <lezione id="11">
+    <id_corso_base>4</id_corso_base>
+    <datetime_lezione>2025-09-19 09:00:00</datetime_lezione>
+    <posti_totali>34</posti_totali>
+    <prenotanti/>
+  </lezione>
+  <lezione id="12">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-09-16 09:00:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+  <lezione id="13">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-10-07 10:30:00</datetime_lezione>
+    <posti_totali>18</posti_totali>
+  </lezione>
+  <lezione id="14">
+    <id_corso_base>2</id_corso_base>
+    <datetime_lezione>2025-09-17 18:30:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+  <lezione id="15">
+    <id_corso_base>2</id_corso_base>
+    <datetime_lezione>2025-10-08 18:30:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+  <lezione id="16">
+    <id_corso_base>3</id_corso_base>
+    <datetime_lezione>2025-09-18 19:00:00</datetime_lezione>
+    <posti_totali>22</posti_totali>
+  </lezione>
+  <lezione id="17">
+    <id_corso_base>3</id_corso_base>
+    <datetime_lezione>2025-10-09 19:00:00</datetime_lezione>
+    <posti_totali>22</posti_totali>
+  </lezione>
+  <lezione id="18">
+    <id_corso_base>4</id_corso_base>
+    <datetime_lezione>2025-09-20 08:30:00</datetime_lezione>
+    <posti_totali>25</posti_totali>
+  </lezione>
+  <lezione id="19">
+    <id_corso_base>4</id_corso_base>
+    <datetime_lezione>2025-10-10 08:30:00</datetime_lezione>
+    <posti_totali>25</posti_totali>
+  </lezione>
+  <lezione id="20">
+    <id_corso_base>5</id_corso_base>
+    <datetime_lezione>2025-09-21 17:00:00</datetime_lezione>
+    <posti_totali>30</posti_totali>
+  </lezione>
+  <lezione id="21">
+    <id_corso_base>5</id_corso_base>
+    <datetime_lezione>2025-10-11 17:00:00</datetime_lezione>
+    <posti_totali>30</posti_totali>
+  </lezione>
+  <lezione id="22">
+    <id_corso_base>6</id_corso_base>
+    <datetime_lezione>2025-09-22 20:00:00</datetime_lezione>
+    <posti_totali>28</posti_totali>
+  </lezione>
+  <lezione id="23">
+    <id_corso_base>6</id_corso_base>
+    <datetime_lezione>2025-10-12 20:00:00</datetime_lezione>
+    <posti_totali>28</posti_totali>
+  </lezione>
+  <lezione id="24">
+    <id_corso_base>7</id_corso_base>
+    <datetime_lezione>2025-09-23 18:00:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+  <lezione id="25">
+    <id_corso_base>7</id_corso_base>
+    <datetime_lezione>2025-10-13 18:00:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+  <lezione id="26">
+    <id_corso_base>8</id_corso_base>
+    <datetime_lezione>2025-09-24 07:30:00</datetime_lezione>
+    <posti_totali>25</posti_totali>
+  </lezione>
+  <lezione id="27">
+    <id_corso_base>8</id_corso_base>
+    <datetime_lezione>2025-10-14 07:30:00</datetime_lezione>
+    <posti_totali>25</posti_totali>
+  </lezione>
+  <lezione id="28">
+    <id_corso_base>9</id_corso_base>
+    <datetime_lezione>2025-09-25 19:30:00</datetime_lezione>
+    <posti_totali>26</posti_totali>
+  </lezione>
+  <lezione id="29">
+    <id_corso_base>9</id_corso_base>
+    <datetime_lezione>2025-10-15 19:30:00</datetime_lezione>
+    <posti_totali>26</posti_totali>
+  </lezione>
+  <lezione id="30">
+    <id_corso_base>10</id_corso_base>
+    <datetime_lezione>2025-09-26 18:00:00</datetime_lezione>
+    <posti_totali>24</posti_totali>
+  </lezione>
+  <lezione id="31">
+    <id_corso_base>10</id_corso_base>
+    <datetime_lezione>2025-10-16 18:00:00</datetime_lezione>
+    <posti_totali>24</posti_totali>
+  </lezione>
+  <lezione id="32">
+    <id_corso_base>1</id_corso_base>
+    <datetime_lezione>2025-10-28 09:00:00</datetime_lezione>
+    <posti_totali>18</posti_totali>
+  </lezione>
+  <lezione id="33">
+    <id_corso_base>7</id_corso_base>
+    <datetime_lezione>2025-10-28 18:00:00</datetime_lezione>
+    <posti_totali>20</posti_totali>
+  </lezione>
+</lezioni>

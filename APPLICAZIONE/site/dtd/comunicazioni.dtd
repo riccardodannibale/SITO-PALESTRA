@@ -1,0 +1,7 @@
+<!ELEMENT comunicazioni (messaggio*)> 
+<!ELEMENT messaggio (titolo, contenuto)> 
+<!ATTLIST messaggio 
+  autore CDATA #REQUIRED 
+  data_invio CDATA #REQUIRED>
+<!ELEMENT titolo (#PCDATA)> 
+<!ELEMENT contenuto (#PCDATA)>

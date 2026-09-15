@@ -1,0 +1,12 @@
+<!ELEMENT promozioni (promo+)>
+<!ELEMENT promo (titolo,descrizione,data_inizio,data_fine,codice_sconto,attiva,percentuale?,applica)>
+<!ATTLIST promo id CDATA #REQUIRED>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT descrizione (#PCDATA)>
+<!ELEMENT data_inizio (#PCDATA)>
+<!ELEMENT data_fine (#PCDATA)>
+<!ELEMENT codice_sconto (#PCDATA)>
+<!ELEMENT attiva (#PCDATA)>
+<!ELEMENT percentuale (#PCDATA)>
+<!ELEMENT applica (tipo+)>
+<!ELEMENT tipo (#PCDATA)>

@@ -1,0 +1,6 @@
+<!ELEMENT corsi_base (corso_base*)>
+<!ELEMENT corso_base (nome, descrizione, difficolta)>
+<!ATTLIST corso_base id CDATA #REQUIRED>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT descrizione (#PCDATA)>
+<!ELEMENT difficolta (#PCDATA)>

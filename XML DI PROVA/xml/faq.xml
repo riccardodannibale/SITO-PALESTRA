@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE faqs SYSTEM "../dtd/faq.dtd">
+<faqs>
+  <faq>
+    <id>1</id>
+    <question>Quali orari sono disponibili?</question>
+    <answer>Dal luned&#xEC; al sabato, 9:00-23:00</answer>
+  </faq>
+  <faq>
+    <id>2</id>
+    <question>&#xC8; necessaria la prenotazione per i corsi?</question>
+    <answer>S&#xEC;, &#xE8; richiesta la prenotazione online o in reception.</answer>
+  </faq>
+  <faq>
+    <id>3</id>
+    <question>Posso sospendere il mio abbonamento?</question>
+    <answer>S&#xEC;, puoi sospenderlo fino a un massimo di 2 mesi all&#x2019;anno.</answer>
+  </faq>
+  <faq>
+    <id>4</id>
+    <question>Qual &#xE8; la politica di cancellazione?</question>
+    <answer>Puoi cancellare la prenotazione fino a 2 ore prima dell&#x2019;inizio del corso.</answer>
+  </faq>
+  <faq>
+    <id>5</id>
+    <question>Ci sono sconti per studenti?</question>
+    <answer>S&#xEC;, offriamo uno sconto del 15% su tutti i piani per studenti.</answer>
+  </faq>
+  <faq>
+    <id>6</id>
+    <question>&#xC8; previsto il riscaldamento prima delle lezioni?</question>
+    <answer>S&#xEC;, ogni lezione inizia con 5-10 minuti di riscaldamento.</answer>
+  </faq>
+  <faq>
+    <id>7</id>
+    <question>Quali metodi di pagamento accettate?</question>
+    <answer>Accettiamo carta di credito, debito, bancomat e contanti.</answer>
+  </faq>
+  <faq>
+    <id>8</id>
+    <question>Posso portare un ospite?</question>
+    <answer>S&#xEC;, con il tuo abbonamento puoi portare un ospite gratuito una volta al mese.</answer>
+  </faq>
+  <faq>
+    <id>9</id>
+    <question>Offrite servizi di personal training?</question>
+    <answer>S&#xEC;, contatta la reception per prenotare un personal trainer.</answer>
+  </faq>
+  <faq>
+    <id>10</id>
+    <question>Come posso contattarvi per assistenza?</question>
+    <answer>Puoi chiamarci al numero +39 365 564 8310 o inviare una mail a supporto@fitnessstudio.it.</answer>
+  </faq>
+</faqs>

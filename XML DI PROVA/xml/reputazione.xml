@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE reputazioni SYSTEM "./dtd/reputazione.dtd">
+<reputazioni>
+  <utente id="1">
+    <username>mario</username>
+    <punteggio>85.0</punteggio>
+    <ultima_attivita>2025-07-07</ultima_attivita>
+  </utente>
+  <utente id="2">
+    <username>luisa</username>
+    <punteggio>96.5</punteggio>
+    <ultima_attivita>2025-09-13</ultima_attivita>
+  </utente>
+  <utente id="3">
+    <username>gianni</username>
+    <punteggio>10.0</punteggio>
+    <ultima_attivita>2025-08-01</ultima_attivita>
+  </utente>
+  <utente id="4">
+    <username>sara</username>
+    <punteggio>20.0</punteggio>
+    <ultima_attivita>2025-08-15</ultima_attivita>
+  </utente>
+  <utente id="5">
+    <username>alice</username>
+    <punteggio>45.0</punteggio>
+    <ultima_attivita>2025-09-13</ultima_attivita>
+  </utente>
+  <utente id="6">
+    <username>bob</username>
+    <punteggio>38.0</punteggio>
+    <ultima_attivita>2025-09-13</ultima_attivita>
+  </utente>
+  <utente id="7">
+    <username>carla</username>
+    <punteggio>15.0</punteggio>
+    <ultima_attivita>2025-08-01</ultima_attivita>
+  </utente>
+  <utente id="8">
+    <username>dario</username>
+    <punteggio>22.0</punteggio>
+    <ultima_attivita>2025-09-13</ultima_attivita>
+  </utente>
+  <utente id="9">
+    <username>admin</username>
+    <punteggio>0.0</punteggio>
+    <ultima_attivita>2025-07-04</ultima_attivita>
+  </utente>
+  <utente id="10">
+    <username>root</username>
+    <punteggio>10.0</punteggio>
+    <ultima_attivita>2025-09-13</ultima_attivita>
+  </utente>
+</reputazioni>

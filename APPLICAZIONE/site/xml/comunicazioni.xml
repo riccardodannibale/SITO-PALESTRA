@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE comunicazioni SYSTEM "../dtd/comunicazioni.dtd">
+<comunicazioni>
+  <messaggio autore="1" data_invio="2025-07-02 14:30:00">
+    <titolo>Manutenzione programmata</titolo>
+    <contenuto>Sabato 5 luglio chiusura mattutina</contenuto>
+  </messaggio>
+  <messaggio autore="3" data_invio="2025-07-04 09:00:00">
+    <titolo>Nuovo corso Zumba</titolo>
+    <contenuto>Da luned&#xEC; parte il corso Zumba alle 19:00 in Sala C</contenuto>
+  </messaggio>
+  <messaggio autore="4" data_invio="2025-07-04 12:30:00">
+    <titolo>Promemoria Prenotazione</titolo>
+    <contenuto>Hai una lezione di Pilates domani alle 18:30</contenuto>
+  </messaggio>
+  <messaggio autore="1" data_invio="2025-07-05 08:45:00">
+    <titolo>Apertura straordinaria</titolo>
+    <contenuto>Domenica apertura dalle 9:00 alle 13:00</contenuto>
+  </messaggio>
+  <messaggio autore="2" data_invio="2025-07-06 11:10:00">
+    <titolo>Corso Body Pump</titolo>
+    <contenuto>Body Pump aggiunto ogni mercoled&#xEC; alle 10:00 in Palestra 2</contenuto>
+  </messaggio>
+  <messaggio autore="1" data_invio="2025-07-07 07:30:00">
+    <titolo>Chiusura ferragosto</titolo>
+    <contenuto>Il 15 agosto la palestra sar&#xE0; chiusa per festivit&#xE0;</contenuto>
+  </messaggio>
+  <messaggio autore="3" data_invio="2025-07-07 18:00:00">
+    <titolo>Invito speciale</titolo>
+    <contenuto>Ti invitiamo al workshop di stretching di venerd&#xEC; prossimo</contenuto>
+  </messaggio>
+</comunicazioni>

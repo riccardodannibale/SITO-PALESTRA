@@ -1,0 +1,16 @@
+<!ELEMENT lezioni (lezione*)>
+<!ELEMENT lezione (id_corso_base, datetime_lezione, posti_totali, prenotanti)>
+<!ATTLIST lezione
+    id ID #REQUIRED>
+<!ELEMENT id_corso_base (#PCDATA)>
+<!ELEMENT datetime_lezione (#PCDATA)>    
+<!ELEMENT posti_totali (#PCDATA)>
+<!ELEMENT prenotanti (prenotante*)>
+<!ELEMENT prenotante EMPTY>
+<!ATTLIST prenotante
+    id ID #REQUIRED
+    id_abb CDATA #REQUIRED
+    user CDATA #REQUIRED
+    stato (confermato|cancellato) "confermato"
+    data_prenotazione CDATA #IMPLIED
+    data_cancellazione CDATA #IMPLIED>

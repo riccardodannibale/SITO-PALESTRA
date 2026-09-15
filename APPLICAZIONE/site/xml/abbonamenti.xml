@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE abbonamenti SYSTEM "../dtd/abbonamenti.dtd">
+<abbonamenti>
+  <abbonamento id="1">
+    <tipo>Mensile</tipo>
+    <durata_mesi>1</durata_mesi>
+    <prezzo>30.00</prezzo>
+  </abbonamento>
+  <abbonamento id="2">
+    <tipo>Trimestrale</tipo>
+    <durata_mesi>3</durata_mesi>
+    <prezzo>80.00</prezzo>
+  </abbonamento>
+  <abbonamento id="3">
+    <tipo>Annuale</tipo>
+    <durata_mesi>12</durata_mesi>
+    <prezzo>300.00</prezzo>
+  </abbonamento>
+</abbonamenti>
